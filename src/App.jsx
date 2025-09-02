@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/vita-sps/" element={<Home />}></Route>
-        <Route path="/vita-sps/about" element={<About />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route path="*" element={<Page404 />}></Route>
       </Routes>
     </Router>

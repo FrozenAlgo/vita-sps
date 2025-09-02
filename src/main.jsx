@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode basename="/vita-sps">
+  <StrictMode>
     <App />
   </StrictMode>
 );
