@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Page404 from "./pages/Page404";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/vita-sps/" element={<Home />}></Route>
         <Route path="/vita-sps/about" element={<About />}></Route>
+        <Route path="*" element={<Page404 />}></Route>
       </Routes>
     </Router>
   );
