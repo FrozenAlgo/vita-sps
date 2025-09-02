@@ -57,41 +57,42 @@ The goal was to apply **React fundamentals, SEO techniques, and security best pr
 
 ## 🔹 Folder Structure
 
-📄 .gitignore
-📄 eslint.config.js
-📄 index.html
-📁 node_modules
-📄 package-lock.json
-📄 package.json
-📁 public
-📄 robots.txt
-📄 sitemap.xml
-📄 vite.svg
-📄 README.md
-📁 src
-📄 App.css
-📄 App.jsx
-📁 assets
-📁 icons
-📁 images
-📄 banner.png
-📄 logo-small.png
-📄 logo.png
-📄 react.svg
-📁 screenshots
-📄 about.jpg
-📄 home.jpg
-📁 components
-📄 Banner.jsx
-📄 Compliance.jsx
-📄 Footer.jsx
-📄 Marquee.jsx
-📄 Navbar.jsx
-📄 Partners.jsx
-📄 Pricing.jsx
-📄 index.css
-📄 main.jsx
-📁 pages
-📄 About.jsx
-📄 Home.jsx
-📄 vite.config.js
+📦 vita-sps
+├── 📄 .gitignore
+├── 📄 eslint.config.js
+├── 📄 index.html
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 vite.config.js
+├── 📄 README.md
+├── 📁 node_modules
+├── 📁 public
+│ ├── 📄 robots.txt
+│ ├── 📄 sitemap.xml
+│ └── 📄 vite.svg
+├── 📁 src
+│ ├── 📄 App.css
+│ ├── 📄 App.jsx
+│ ├── 📄 index.css
+│ ├── 📄 main.jsx
+│ ├── 📁 assets
+│ │ ├── 📁 icons
+│ │ ├── 📁 images
+│ │ │ ├── banner.png
+│ │ │ ├── logo-small.png
+│ │ │ ├── logo.png
+│ │ │ └── react.svg
+│ │ └── 📁 screenshots
+│ │ ├── about.jpg
+│ │ └── home.jpg
+│ ├── 📁 components
+│ │ ├── Banner.jsx
+│ │ ├── Compliance.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Marquee.jsx
+│ │ ├── Navbar.jsx
+│ │ ├── Partners.jsx
+│ │ └── Pricing.jsx
+│ └── 📁 pages
+│ ├── About.jsx
+│ └── Home.jsx
