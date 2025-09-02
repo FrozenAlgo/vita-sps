@@ -8,5 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/vita-sps/', 
+  base: '/vita-sps/',
+  
 })

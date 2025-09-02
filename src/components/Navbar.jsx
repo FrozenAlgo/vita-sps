@@ -38,7 +38,7 @@ function Navbar() {
               : ""
           }`}
         >
-          <a href="/">
+          <a href="/vita-sps/">
             <img
               src="src/assets/images/logo.png"
               className=" w-[80%] md:w-[50%] lg:w-full "
@@ -229,7 +229,7 @@ function Navbar() {
              }   lg:block`}
               >
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
-                  <a href="/about" className="nav-link">
+                  <a href="/vita-sps/about" className="nav-link">
                     Contact Us
                   </a>
                 </li>
