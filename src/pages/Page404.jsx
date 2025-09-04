@@ -236,7 +236,7 @@ function Page404() {
         />
 
         {/* Optionally add canonical */}
-        <link rel="canonical" href="https://yourdomain.com/" />
+        {/* <link rel="canonical" href="https://yourdomain.com/" /> */}
       </Helmet>
       <Navbar />
       <Banner bannerContent={banner[0]} />

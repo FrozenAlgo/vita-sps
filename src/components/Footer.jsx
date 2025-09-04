@@ -3,13 +3,13 @@ import { IoIosArrowForward } from "react-icons/io";
 function Footer() {
   return (
     <>
-      <footer className="bg-[url(src/assets/images/banner.png)] bg-center relative text-white pt-10 mt-12">
+      <footer className="bg-[url(/src/assets/images/banner.png)] bg-center relative text-white pt-10 mt-12">
         <div className=" absolute top-0 left-0 h-full w-full bg-blue-950/90 "></div>
         <div className="flex flex-col md:flex-row  z-20 relative">
           <div className=" basis-full md:basis-1/2 px-3 md:ps-20">
             <div className="">
               <img
-                src="src/assets/images/logo.png"
+                src="/src/assets/images/logo.png"
                 className="w-[100%] md:w-[80%] "
                 alt=""
               />

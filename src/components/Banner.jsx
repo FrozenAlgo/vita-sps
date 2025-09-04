@@ -4,7 +4,7 @@ function Banner({ bannerContent }) {
   return (
     <>
       <div
-        className="bg-[url(src/assets/images/banner.png)] bg-center 
+        className="bg-[url(/src/assets/images/banner.png)] bg-center 
  w-[100vw] overflow-x-hidden   pt-[10vh]  relative rubik"
       >
         <div className=" absolute top-0 left-0 h-full w-full bg-neutral-900/60 z-10"></div>
@@ -18,7 +18,7 @@ function Banner({ bannerContent }) {
               {bannerContent.button && (
                 <a
                   href="https://vita.spsnet.com/about-us/"
-                  className=" gradient-btn py-2 px-4 rounded"
+                  className=" gradient-btn text-sm py-3 px-5 rounded"
                 >
                   Learn More
                 </a>

@@ -10,8 +10,8 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       const scrollY = this.window.scrollY || window.pageYOffset;
-      // console.log(scrollY);
-      if (scrollY > 100) {
+      // console.log(scrol  lY);
+      if (scrollY > 50) {
         setNavScroll(true);
       } else {
         setNavScroll(false);
@@ -40,7 +40,7 @@ function Navbar() {
         >
           <a href="/">
             <img
-              src="src/assets/images/logo.png"
+              src="/src/assets/images/logo.png"
               className=" w-[80%] md:w-[50%] lg:w-full "
               alt="SPS logo Image"
               loading="lazy"
@@ -90,7 +90,7 @@ function Navbar() {
               >
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/information-security-policy/"
+                    href="/compliance/information-security-policy/"
                     className="nav-link"
                   >
                     Information Security Policy
@@ -98,7 +98,7 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/roles-and-responsibilities/"
+                    href="/compliance/roles-and-responsibilities/"
                     className="nav-link"
                   >
                     Roles and Responsibilities
@@ -106,7 +106,7 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/business-impact/"
+                    href="/compliance/business-impact-analysis/"
                     className="nav-link"
                   >
                     Business Impact
@@ -114,7 +114,7 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/it-system-data/"
+                    href="/compliance/system-and-data-sensitivity-classification/"
                     className="nav-link"
                   >
                     IT System and Data Sensitivity
@@ -122,23 +122,20 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/sensitive-it-inventory/"
+                    href="/compliance/sensitive-it-system-inventory/"
                     className="nav-link"
                   >
                     Sensitive IT Inventory
                   </a>
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
-                  <a
-                    href="https://vita.spsnet.com/compliance/risk-assessment/"
-                    className="nav-link"
-                  >
+                  <a href="/compliance/risk-assessment/" className="nav-link">
                     Risk Assessment
                   </a>
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/it-security-audits/"
+                    href="/compliance/it-security-audits/"
                     className="nav-link"
                   >
                     IT Security Audits
@@ -146,7 +143,7 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/security-controls-catalog/"
+                    href="/compliance/security-controls-catalog/"
                     className="nav-link"
                   >
                     Security Controls Catalog
@@ -154,10 +151,42 @@ function Navbar() {
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
                   <a
-                    href="https://vita.spsnet.com/compliance/sec-540/"
+                    href="/compliance/sec-540-data-classifications/"
                     className="nav-link"
                   >
                     SEC-540 Classification
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="group">
+              <a role="button" className="flex items-center gap-2 top-link">
+                Services
+                <span
+                  onClick={() => {
+                    toggleMenu("services");
+                  }}
+                  className="font-bold text-xl ms-2 transition-transform duration-300 group-hover:rotate-180"
+                >
+                  +
+                </span>
+              </a>
+              <ul
+                className={`dropdown-menu lg:absolute bg-white text-black font-normal mt-2 
+             lg:invisible lg:opacity-0 translate-y-2 
+             lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:translate-y-0
+             transition-all duration-300 min-w-[200px] ${
+               expandOptions == "services" ? "block" : "hidden"
+             }   lg:block`}
+              >
+                <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
+                  <a href="/services/cyber-range/" className="nav-link">
+                    Cyber Range
+                  </a>
+                </li>
+                <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
+                  <a href="/services/department/" className="nav-link">
+                    Departmental Tabletop Exercises
                   </a>
                 </li>
               </ul>
@@ -183,26 +212,17 @@ function Navbar() {
              }   lg:block`}
               >
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
-                  <a
-                    href="https://vita.spsnet.com/compliance/information-security-policy/"
-                    className="nav-link"
-                  >
+                  <a href="/plans/basic-plan/" className="nav-link">
                     Basic Plan
                   </a>
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
-                  <a
-                    href="https://vita.spsnet.com/compliance/roles-and-responsibilities/"
-                    className="nav-link"
-                  >
+                  <a href="/plans/standard-plan/" className="nav-link">
                     Standard Plan
                   </a>
                 </li>
                 <li className="py-2 px-3 border-b-1 border-b-gray-300 hover:text-blue-500 hover:border-b-blue-600 transition-all ease-in-out duration-200">
-                  <a
-                    href="https://vita.spsnet.com/compliance/business-impact/"
-                    className="nav-link"
-                  >
+                  <a href="/plans/premium-plan/" className="nav-link">
                     Premium Plan
                   </a>
                 </li>
