@@ -22,7 +22,6 @@ function App() {
         <Route path="/services/cyber-range" element={<CyberRange />}></Route>
         <Route path="/services/department" element={<Department />}></Route>
         <Route path="*" element={<Page404 />}></Route>
-        {/* <Route path="*" element={<Page404 />}></Route> */}
       </Routes>
     </Router>
   );
