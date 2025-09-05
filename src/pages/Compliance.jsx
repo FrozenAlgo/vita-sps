@@ -72,8 +72,8 @@ function Compliance() {
               <img
                 className="max-w-full
                  "
-                src={`/src/${pageData.mainSection[0].image}`}
-                alt=""
+                src={`${pageData.mainSection[0].image}`}
+                alt={`${pageData.mainSection[0].heading}`}
               />
             </div>
           </div>

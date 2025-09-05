@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
-import { IoIosArrowForward } from "react-icons/io";
+// import { IoIosArrowForward } from "react-icons/io";
+import { ChevronRight } from "lucide-react";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 
@@ -236,7 +237,7 @@ function Home() {
         />
 
         {/* Optionally add canonical */}
-        <link rel="canonical" href="https://yourdomain.com/" />
+        {/* <link rel="canonical" href="https://yourdomain.com/" /> */}
       </Helmet>
       <Navbar />
       <Banner bannerContent={banner[0]} />
@@ -252,7 +253,8 @@ function Home() {
                 }}
                 key={index}
               >
-                <IoIosArrowForward /> {item.title}
+                <ChevronRight />
+                {item.title}
               </li>
             ))}
           </ul>
@@ -283,7 +285,8 @@ function Home() {
                   features[details].points.length > 0 ? "py-2" : ""
                 } flex items-center text-blue-600`}
               >
-                Learn More <IoIosArrowForward />
+                Learn More
+                <ChevronRight />
               </a>
             </div>
           </div>

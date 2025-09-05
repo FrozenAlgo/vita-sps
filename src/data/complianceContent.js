@@ -16,7 +16,7 @@ const complianceContent = {
           "This section establishes a base standard for information security and risk management across the agency. Drawing from NIST SP 800-53 Rev. 5, it defines baseline expectations for protecting confidentiality, integrity, and availability. Agencies must meet or exceed these baselines and may then tailor and document controls to suit their environment and sensitivity of their systems and data.",
         quote:
           "Agencies are required to develop, document, and enforce an information security program that aligns with SEC530 Information Security Standard. Exceptions may only be granted with proper justification, mitigation, and approval.",
-        image: "/assets/images/security.jpeg",
+        image: "/images/security.jpeg",
       },
     ],
     subSection: [
@@ -82,7 +82,7 @@ const complianceContent = {
         "This section defines the key IT security roles and responsibilities within the Commonwealth’s Information Security Program. Individuals may hold multiple roles— as long as separation of duties is maintained to prevent conflicts of interest or fraud.",
       quote:
         "Each agency should utilize an organization chart that depicts the reporting structure… and shall maintain documentation regarding specific roles and responsibilities relating to information security.",
-      image: "/assets/images/vita1.webp",
+      image: "/images/vita1.webp",
     },
   ],
 
@@ -152,7 +152,7 @@ const complianceContent = {
         "A Business Impact Analysis (BIA) identifies essential business functions and the systems and data that support them. It helps agencies understand how the loss or disruption of services impacts confidentiality, integrity, and availability. The results guide risk management, contingency planning, and system classification efforts.",
       quote:
         "Agencies are required to complete and document BIAs for all information systems and business processes, ensuring they are reviewed annually and fully updated every three years.",
-      image: "/assets/images/business.webp",
+      image: "/images/business.webp",
     },
   ],
   subSection: [
@@ -204,7 +204,7 @@ const complianceContent = {
         "System and data sensitivity classification is the process of assigning a sensitivity level to information systems and the data they store, process, or transmit. This ensures that agencies apply appropriate safeguards to protect confidentiality, integrity, and availability in line with business and regulatory requirements.",
       quote:
         "Agencies must classify their IT systems and data based on sensitivity to ensure appropriate security controls are implemented and maintained.",
-      image: "/assets/images/data.webp",
+      image: "/images/data.webp",
     },
   ],
   subSection: [
@@ -255,7 +255,7 @@ const complianceContent = {
         "Sensitive IT systems are those that process, store, or transmit information essential to an agency’s mission, public safety, or regulatory compliance. Maintaining an accurate inventory of these systems ensures that appropriate security controls are applied and continuously monitored.",
       quote:
         "Agencies are required to identify, define, and maintain an inventory of sensitive IT systems to ensure security measures align with business, legal, and operational requirements.",
-      image: "/assets/images/inventory.jpeg",
+      image: "/images/inventory.jpeg",
     },
   ],
   subSection: [
@@ -307,7 +307,7 @@ const complianceContent = {
         "Risk assessment is the foundation of information security management. Agencies are required to identify threats, vulnerabilities, and potential impacts to ensure appropriate security controls are in place. This process aligns business objectives with security measures, reducing the likelihood and severity of incidents.",
       quote:
         "Agencies must conduct regular risk assessments to identify, evaluate, and prioritize risks to IT systems and data, ensuring decisions are based on business impact and security requirements.",
-      image: "/assets/images/risk.jpg",
+      image: "/images/risk.jpg",
     },
   ],
   subSection: [
@@ -356,7 +356,7 @@ const complianceContent = {
         "IT Security Audits are independent reviews required by the Commonwealth to evaluate how well agencies protect sensitive systems. They measure compliance with SEC 530 and SEC 502 standards, ensuring security policies, procedures, and technical safeguards are being followed.",
       quote:
         "Each agency shall ensure that an IT security audit of all sensitive systems is conducted every three years in accordance with the Commonwealth’s security audit standard (SEC 502). All findings must be documented and corrective actions tracked until resolution.",
-      image: "/assets/images/vita1.webp",
+      image: "/images/vita1.webp",
     },
   ],
   subSection: [
@@ -405,7 +405,7 @@ const complianceContent = {
         "The Commonwealth’s Information Security Standard (SEC-530) defines a catalog of security controls organized into families. Each control contains a statement, a discussion to explain intent, and possible enhancements for higher-risk or sensitive systems.",
       quote:
         "Security controls described in this standard are organized into families. Each family contains controls related to the same security functionality.",
-      image: "/assets/images/catalog.jpeg",
+      image: "/images/catalog.jpeg",
     },
   ],
   subSection: [
@@ -511,7 +511,7 @@ const complianceContent = {
             " Ensure information is managed in a way that protects confidentiality, integrity, and availability.",
             " Meet legal, regulatory, and business requirements."
         ],
-      image: "/assets/images/vita11.webp",
+      image: "/images/vita11.webp",
     },
   ],
   subSection: [
@@ -570,7 +570,7 @@ const complianceContent = {
 //           "System and data sensitivity classification is the process of assigning a sensitivity level to information systems and the data they store, process, or transmit. This ensures that agencies apply appropriate safeguards to protect confidentiality, integrity, and availability in line with business and regulatory requirements.",
 //         quote:
 //           "Agencies must classify their IT systems and data based on sensitivity to ensure appropriate security controls are implemented and maintained. — SEC 530 Standard",
-//         image: "/assets/images/classification.png",
+//         image: "/images/classification.png",
 //       },
 //     ],
 //     subSection: [
@@ -630,7 +630,7 @@ const complianceContent = {
 //           "A Business Impact Analysis (BIA) identifies essential business functions and the systems and data that support them. It helps agencies understand how the loss or disruption of services impacts confidentiality, integrity, and availability. The results guide risk management, contingency planning, and system classification efforts.",
 //         quote:
 //           "Agencies are required to complete and document BIAs for all information systems and business processes, ensuring they are reviewed annually and fully updated every three years. — SEC 530 Standard",
-//         image: "/assets/images/bia.png",
+//         image: "/images/bia.png",
 //       },
 //     ],
 //     subSection: [
@@ -695,7 +695,7 @@ const complianceContent = {
 //           "Sensitive IT systems are those that process, store, or transmit information essential to an agency’s mission, public safety, or regulatory compliance. Maintaining an accurate inventory of these systems ensures that appropriate security controls are applied and continuously monitored.",
 //         quote:
 //           "Agencies are required to identify, define, and maintain an inventory of sensitive IT systems to ensure security measures align with business, legal, and operational requirements. — SEC 530 Standard",
-//         image: "/assets/images/sensitive-systems.png",
+//         image: "/images/sensitive-systems.png",
 //       },
 //     ],
 //     subSection: [

@@ -1,12 +1,25 @@
-import Pricing from "./Pricing";
+import { lazy, Suspense } from "react";
+
+// import Pricing from "./Pricing";
+const Pricing = lazy(() => import("./Pricing"));
 
 function Banner({ bannerContent }) {
   return (
     <>
       <div
-        className="bg-[url(/src/assets/images/banner.png)] bg-center 
- w-[100vw] overflow-x-hidden   pt-[10vh]  relative rubik"
+        className=" bg-center 
+ w-[100vw] overflow-x-hidden   pt-[10vh]  relative font-sans"
       >
+        <img
+          src="/images/banner.avif"
+          alt="Banner"
+          width={1920}
+          height={1080} // ✅ add dimensions to avoid CLS
+          fetchpriority="high" // ✅ LCP boost
+          decoding="async"
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className=" absolute top-0 left-0 h-full w-full bg-neutral-900/60 z-10"></div>
         <div className="relative z-20 px-3 md:px-12 flex flex-col md:flex-row py-10 md:py-0 text-white">
           <div className="basis-full md:basis-1/2">
@@ -26,7 +39,9 @@ function Banner({ bannerContent }) {
             </div>
           </div>
           <div className="basis-full md:basis-1/2 flex justify-center  items-center">
-            {bannerContent.pricingView && <Pricing />}
+            <Suspense fallback={<div>Loading...</div>}>
+              {bannerContent.pricingView && <Pricing />}
+            </Suspense>
           </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ function Navbar() {
         >
           <a href="/">
             <img
-              src="/src/assets/images/logo.png"
+              src="/images/logo.avif"
               className=" w-[80%] md:w-[50%] lg:w-full "
               alt="SPS logo Image"
               loading="lazy"

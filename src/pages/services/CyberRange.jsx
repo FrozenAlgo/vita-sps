@@ -149,7 +149,7 @@ function CyberRange() {
           <div className="flex justify-center basis-full  md:basis-[75%]">
             <img
               className=" rounded-xl md:hover:scale-105 duration-300 ease-in-out px-3 md:px-0"
-              src="/src/assets/images/c2.png"
+              src="/images/c2.png"
               alt="image"
             ></img>
           </div>

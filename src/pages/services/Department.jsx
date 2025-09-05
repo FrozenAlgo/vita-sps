@@ -33,7 +33,7 @@ function Department() {
           <div className="flex justify-center basis-full  md:basis-[75%]">
             <img
               className=" rounded-xl md:hover:scale-105 duration-300 ease-in-out px-3 md:px-0"
-              src="/src/assets/images/depart.jpg"
+              src="/images/depart.jpg"
               alt="Image"
             ></img>
           </div>
